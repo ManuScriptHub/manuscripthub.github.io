@@ -1,2 +1,2 @@
-# manuscripts.github.io
-ManuScripts
+# manuscripthub.github.io
+ManuScriptHub
