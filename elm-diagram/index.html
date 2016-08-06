@@ -15334,6 +15334,7 @@ var _ManuScriptHub$elm_diagram$Demo_Model$head = function (url) {
 			body: _evancz$elm_http$Http$empty
 		});
 };
+var _ManuScriptHub$elm_diagram$Demo_Model$serviceUrl = 'http://185.48.228.66:3001/';
 var _ManuScriptHub$elm_diagram$Demo_Model$Model = function (a) {
 	return function (b) {
 		return function (c) {
@@ -15399,7 +15400,7 @@ var _ManuScriptHub$elm_diagram$Demo_Model$fetchData = function (msg) {
 				_ManuScriptHub$elm_diagram$Extra_Http$httpErrorToString(err));
 		},
 		msg,
-		A2(_evancz$elm_http$Http$get, _ManuScriptHub$elm_diagram$Model_ElmFile$decodeList, 'http://localhost:3001'));
+		A2(_evancz$elm_http$Http$get, _ManuScriptHub$elm_diagram$Model_ElmFile$decodeList, _ManuScriptHub$elm_diagram$Demo_Model$serviceUrl));
 };
 var _ManuScriptHub$elm_diagram$Demo_Model$update = F2(
 	function (msg, model) {
@@ -15607,7 +15608,7 @@ var _ManuScriptHub$elm_diagram$Demo_Model$checkServerStatus = A3(
 	function (_p11) {
 		return _ManuScriptHub$elm_diagram$Demo_Model$ServerReachable(true);
 	},
-	_ManuScriptHub$elm_diagram$Demo_Model$head('http://localhost:3001'));
+	_ManuScriptHub$elm_diagram$Demo_Model$head(_ManuScriptHub$elm_diagram$Demo_Model$serviceUrl));
 var _ManuScriptHub$elm_diagram$Demo_Model$Init = function (a) {
 	return {ctor: 'Init', _0: a};
 };
